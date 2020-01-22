@@ -1,0 +1,34 @@
+.section {
+    padding: $g-space*10 0;
+
+    .btn {
+        font-family: $font-bold;
+        font-weight: bold;
+    }
+
+    .section-title {
+        h3 {
+            color    : $main-color;
+            font-size: 40px
+        }
+
+        p {
+            font-size: 27px;
+        }
+
+        .btn {
+
+            font-size: 18px;
+        }
+    }
+}
+
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-bold;
+}
