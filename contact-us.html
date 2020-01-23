@@ -111,7 +111,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">الرئيسية</a>
+                            <a class="nav-link" href="index.html">الرئيسية</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">من نحن</a>
@@ -270,9 +270,8 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle no-caret" href="#" role="button"
-                                id="dropdownMenuBrands" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">الماركات</a>
+                            <a class="nav-link dropdown-toggle no-caret" href="#" role="button" id="dropdownMenuBrands"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">الماركات</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuBrands">
                                 <li class="dropdown-item">
                                     <a class="" href="#">المفروشات
@@ -374,7 +373,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="contact-us.html">تواصل معنا</a>
                         </li>
                     </ul>
@@ -394,8 +393,7 @@
                                     <div class="search-popup--bg"></div>
                                     <form action="" class="search-form">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <input type="text" class="form-control w-border"
-                                                placeholder="ابحث هنا">
+                                            <input type="text" class="form-control w-border" placeholder="ابحث هنا">
                                             <button type="submit" class="btn btn-transparent">
                                                 <img src="img/icons/search.png" alt="search">
                                             </button>
@@ -511,393 +509,98 @@
     <!-- end header -->
     <!-- start all content -->
     <main>
-        <!-- start main header -->
-        <section class="header-content">
-            <div class="first-slider owl-carousel owl-theme">
-                <div class="item">
-                    <img src="img/dynamic/slider-1/slider-e.png" class="img-fluid" alt="slider item">
-                    <div class="item-overlay">
-                        <div class="content">
-                            <h1 class="first-title white-font">مرحباً بكم في فروتشي</h1>
-                            <a href="#" class="btn btn-red w-shadow">تسوق الآن</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/dynamic/slider-1/slider-c.png" class="img-fluid" alt="slider item">
-                    <div class="item-overlay"></div>
-                </div>
-                <div class="item">
-                    <img src="img/dynamic/slider-1/slider-d.png" class="img-fluid" alt="slider item">
-                    <div class="item-overlay"></div>
-                </div>
-                <div class="item">
-                    <img src="img/dynamic/slider-1/slider-c.png" class="img-fluid" alt="slider item">
-                    <div class="item-overlay"></div>
-                </div>
+
+        <!-- start banner  -->
+        <section class="banner-block">
+            <div class="page-title center">
+                <h1 class="font-white">تواصل معنا</h1>
+                <p class="font-white">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى.
+                </p>
             </div>
         </section>
-        <!-- end main header -->
-        <!-- start second section -->
-        <section class="second-block">
-            <!-- second slider -->
+        <!-- end banner  -->
+
+        <!-- start content -->
+        <section class="main-content">
             <div class="container">
-                <div class="second-slider">
-                    <div class="item">
-                        <img src="img/dynamic/slider-2/01.png" class="img-fluid" alt="slider item">
-                        <div class="item-overlay">
-                            <p class="item-name">روب حمام</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/dynamic/slider-2/02.png" class="img-fluid" alt="slider item">
-                        <div class="item-overlay">
-                            <p class="item-name">مناشف</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/dynamic/slider-2/03.png" class="img-fluid" alt="slider item">
-                        <div class="item-overlay">
-                            <p class="item-name">لحافات</p>
+                <div class="w-radius w-shadow top-block md-width light-bg">
+                    <div class="contact-ways">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3 wow slideInUp">
+                                <a class="single-way" href="#">
+                                    <div class="icon">
+                                        <img src="img/icons/location.png" alt="img">
+                                    </div>
+                                    <p class="font-black">المملكة العربية السعودية</p>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-3 wow slideInUp" data-wow-delay="0.2s">
+                                <a class="single-way" href="tel:+966501111111">
+                                    <div class="icon">
+                                        <img src="img/icons/tel.png" alt="img">
+                                    </div>
+                                    <p class="font-black">013-8940101</p>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-3 wow slideInUp" data-wow-delay="0.4s">
+                                <a class="single-way" href="#">
+                                    <div class="icon">
+                                        <img src="img/icons/fax-bg.png" alt="img">
+                                    </div>
+                                    <p class="font-black">013-8940101</p>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-3 wow slideInUp" data-wow-delay="0.6s">
+                                <a class="single-way" href="mailto:info@ferrucci-sa.com">
+                                    <div class="icon">
+                                        <img src="img/icons/envelope.png" alt="img">
+                                    </div>
+                                    <p class="font-black">info@ferrucci-sa.com</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end second section -->
-        <!-- start newest section -->
-        <section class="newest-block">
+        <!-- end content -->
+
+        <!-- start second content -->
+        <section class="main-content">
             <div class="container">
-                <div class="title center">
-                    <h3 class="main-title wow fadeInDown">المنتجات الجديدة</h3>
-                </div>
-                <div class="data-filters data-filter-product">
-                    <ul class="data-filters-links data-filters-product-links">
-                        <li class="active" data-filter="all">الكل</li>
-                        <li data-filter="1">مفروشات</li>
-                        <li data-filter="2">مناشف</li>
-                        <li data-filter="3">لحافات</li>
-                        <li data-filter="4">روب حمام</li>
-                        <li data-filter="6">بطانيات</li>
-                    </ul>
-                    <ul class="row data-filters-items data-filters-product-items">
-                        <!-- all product -->
-                        <li class="col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-filter="2">
-                            <div class="card product-item">
-                                <a href="#">
-                                    <div class="card-image">
-                                        <img src="img/dynamic/products/02.png" class="img-fluid" alt="product">
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="main-color product-name">كيس لحاف من كومفورت</h5>
-                                    <p class="product-price">50.00 رس</p>
-                                    <div class="product-rate">
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                    </div>
-                                </div>
+                <div class="w-radius w-shadow md-width form-content w-bg light-bg">
+                    <div class="title center">
+                        <h3 class="main-title wow fadeInDown">توصل معنا</h3>
+                    </div>
+                    <div class="custom-form">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="" class="label">الاسم</label>
+                                <input type="text" class="form-control" placeholder="" required />
                             </div>
-                        </li>
-                        <li class="col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-filter="3">
-                            <div class="card product-item">
-                                <a href="#">
-                                    <div class="card-image">
-                                        <img src="img/dynamic/products/03.png" class="img-fluid" alt="product">
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="main-color product-name">منشفة قطن من لاانتيك</h5>
-                                    <p class="product-price">50.00 رس</p>
-                                    <div class="product-rate">
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <label for="" class="label">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" placeholder="" required />
                             </div>
-                        </li>
-                        <li class="col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-filter="4">
-                            <div class="card product-item">
-                                <a href="#">
-                                    <div class="card-image">
-                                        <img src="img/dynamic/products/01.png" class="img-fluid" alt="product">
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="main-color product-name">طقم روب رمادي حمام قطن</h5>
-                                    <p class="product-price">50.00 رس</p>
-                                    <div class="product-rate">
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <label for="" class="label">رقم الجوال</label>
+                                <input type="tel" class="form-control" placeholder="" required />
                             </div>
-                        </li>
-                        <li class="col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-filter="1">
-                            <div class="card product-item">
-                                <a href="#">
-                                    <div class="card-image">
-                                        <img src="img/dynamic/products/04.png" class="img-fluid" alt="product">
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="main-color product-name">بينجوين مسند للجلوس قطن</h5>
-                                    <p class="product-price">50.00 رس</p>
-                                    <div class="product-rate">
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <label for="" class="label">الرسالة</label>
+                                <textarea class="form-control" required ></textarea>
                             </div>
-                        </li>
-                        <li class="col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-filter="2">
-                            <div class="card product-item">
-                                <a href="#">
-                                    <div class="card-image">
-                                        <img src="img/dynamic/products/02.png" class="img-fluid" alt="product">
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="main-color product-name">كيس لحاف من كومفورت</h5>
-                                    <p class="product-price">50.00 رس</p>
-                                    <div class="product-rate">
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                    </div>
-                                </div>
+                            <div class="center">
+                                <button type="submit" class="btn btn-main btn-lg">ارسال</button>
                             </div>
-                        </li>
-                        <li class="col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-filter="3">
-                            <div class="card product-item">
-                                <a href="#">
-                                    <div class="card-image">
-                                        <img src="img/dynamic/products/03.png" class="img-fluid" alt="product">
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="main-color product-name">منشفة قطن من لاانتيك</h5>
-                                    <p class="product-price">50.00 رس</p>
-                                    <div class="product-rate">
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-filter="6">
-                            <div class="card product-item">
-                                <a href="#">
-                                    <div class="card-image">
-                                        <img src="img/dynamic/products/01.png" class="img-fluid" alt="product">
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="main-color product-name">طقم روب رمادي حمام قطن</h5>
-                                    <p class="product-price">50.00 رس</p>
-                                    <div class="product-rate">
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInUp" data-filter="1">
-                            <div class="card product-item">
-                                <a href="#">
-                                    <div class="card-image">
-                                        <img src="img/dynamic/products/04.png" class="img-fluid" alt="product">
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="main-color product-name">بينجوين مسند للجلوس قطن</h5>
-                                    <p class="product-price">50.00 رس</p>
-                                    <div class="product-rate">
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="gold"><i class="fas fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                        <span class="grey"><i class="far fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- end services section -->
-        <!-- start common group -->
-        <section class="common-block">
-            <div class="container">
-                <div class="title center">
-                    <h3 class="main-title wow fadeInDown">مجموعات شائعة</h3>
-                    <p class="second-title font-color center wow fadeInUp" data-wow-delay="0.2s">
-                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة لقد تم توليد هذا النص من مولد النص العربى.
-                    </p>
-                </div>
-                <div class="all-groups wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="row">
-                        <div class="col-sm-6 col-lg-6">
-                            <div class="right-groups">
-                                <div class="single-group">
-                                    <div class="product-img">
-                                        <img src="img/dynamic/common/01.png" class="img-fluid" alt="goup item">
-                                    </div>
-                                    <div class="form-inline">
-                                        <div class="product-action">
-                                            <a href="" class="btn">اسم المنتج</a>
-                                            <button type="button" class="btn fav-link"> أضف الى المفضلة
-                                                <span class="i-noliked"><i class="far fa-heart"></i></span>
-                                                <span class="i-liked"><i class="fas fa-heart"></i></span>
-                                            </button>
-                                            <div class="product-rate">
-                                                <span class="white-color text">تقييم المنتج</span>
-                                                <span class="star gold"><i class="fas fa-star"></i></span>
-                                                <span class="star gold"><i class="fas fa-star"></i></span>
-                                                <span class="star gold"><i class="fas fa-star"></i></span>
-                                                <span class="star grey"><i class="far fa-star"></i></span>
-                                                <span class="star grey"><i class="far fa-star"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="single-group sm-height">
-                                            <div class="product-img">
-                                                <img src="img/dynamic/common/02.png" class="img-fluid" alt="goup item">
-                                            </div>
-                                            <div class="form-inline">
-                                                <div class="product-action">
-                                                    <a href="" class="btn">اسم المنتج</a>
-                                                    <button type="button" class="btn fav-link"> أضف الى المفضلة
-                                                        <span class="i-noliked"><i class="far fa-heart"></i></span>
-                                                        <span class="i-liked"><i class="fas fa-heart"></i></span>
-                                                    </button>
-                                                    <div class="product-rate">
-                                                        <span class="white-color text">تقييم المنتج</span>
-                                                        <span class="star gold"><i class="fas fa-star"></i></span>
-                                                        <span class="star gold"><i class="fas fa-star"></i></span>
-                                                        <span class="star gold"><i class="fas fa-star"></i></span>
-                                                        <span class="star grey"><i class="far fa-star"></i></span>
-                                                        <span class="star grey"><i class="far fa-star"></i></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="single-group sm-height">
-                                            <div class="product-img">
-                                                <img src="img/dynamic/common/03.png" class="img-fluid" alt="goup item">
-                                            </div>
-                                            <div class="form-inline">
-                                                <div class="product-action">
-                                                    <a href="" class="btn">اسم المنتج</a>
-                                                    <button type="button" class="btn fav-link"> أضف الى المفضلة
-                                                        <span class="i-noliked"><i class="far fa-heart"></i></span>
-                                                        <span class="i-liked"><i class="fas fa-heart"></i></span>
-                                                    </button>
-                                                    <div class="product-rate">
-                                                        <span class="white-color text">تقييم المنتج</span>
-                                                        <span class="star gold"><i class="fas fa-star"></i></span>
-                                                        <span class="star gold"><i class="fas fa-star"></i></span>
-                                                        <span class="star gold"><i class="fas fa-star"></i></span>
-                                                        <span class="star grey"><i class="far fa-star"></i></span>
-                                                        <span class="star grey"><i class="far fa-star"></i></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-6">
-                            <div class="left-groups">
-                                <div class="single-group">
-                                    <div class="product-img">
-                                        <img src="img/dynamic/common/04.png" class="img-fluid" alt="goup item">
-                                    </div>
-                                    <div class="form-inline">
-                                        <div class="product-action">
-                                            <a href="" class="btn">اسم المنتج</a>
-                                            <button type="button" class="btn fav-link"> أضف الى المفضلة
-                                                <span class="i-noliked"><i class="far fa-heart"></i></span>
-                                                <span class="i-liked"><i class="fas fa-heart"></i></span>
-                                            </button>
-                                            <div class="product-rate">
-                                                <span class="white-color text">تقييم المنتج</span>
-                                                <span class="star gold"><i class="fas fa-star"></i></span>
-                                                <span class="star gold"><i class="fas fa-star"></i></span>
-                                                <span class="star gold"><i class="fas fa-star"></i></span>
-                                                <span class="star grey"><i class="far fa-star"></i></span>
-                                                <span class="star grey"><i class="far fa-star"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end common group -->
-        <!-- start branches -->
-        <section class="branches-block light-bg w-shadow">
-            <div class="container">
-                <div class="title center w-bottom-border">
-                    <h3 class="main-title wow fadeInDown">مواقع فروعنا</h3>
-                    <p class="second-title font-color center wow fadeInUp" data-wow-delay="0.2s">ابحث عن الفرع الأقرب لك
-                        للتسوق من FERRUCCI
-                    </p>
-                </div>
-                <div class="branches-area center">
-                    <form action="">
-                        <div class="form-group">
-                            <label class="label" for="">الدولة</label>
-                            <select class="single-select" name="state">
-                                <option value="AL">المملكة العربية السعودية</option>
-                                <option value="AL">الامارت</option>
-                                <option value="WY">المملكة العربية السعودية</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="label" for="">المدينة</label>
-                            <select class="single-select" name="state">
-                                <option value="AL">شارع الأمير بندر, الخبر الشمالـ ...</option>
-                                <option value="AL">شارع الأمير ...</option>
-                                <option value="AL">شارع الأمير بندر, الخبر الشمالـ ...</option>
-                            </select>
-                        </div>
-                    </form>
-                    <div class="map-area w-shadow" id="map"></div>
-                </div>
-            </div>
-        </section>
-        <!-- end branches -->
+        <!-- end second content -->
+
         <!-- start brand section -->
         <section class="parnters-block">
             <div class="container">
@@ -1104,10 +807,11 @@
     <script src="js/slick/slick.js"></script>
     <script src="js/select2.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/map.js"></script>
+    <!-- display only if map -->
+    <!-- <script src="js/map.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx--BILIM2LjZBxVMjGYVb8YqrY-Vk_Yk&callback=initMap">
-    </script>
+    </script> -->
 
 </body>
 

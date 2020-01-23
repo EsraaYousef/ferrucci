@@ -53,10 +53,9 @@
                 }
 
                 img {
-                    max-height: 22px;
-                }
-                .lang-icon{
                     width: 22px;
+                    height: auto;
+                    max-height: 22px;
                 }
             }
         }
@@ -615,7 +614,7 @@ body {
         .single-group {
             border-radius: 8px;
             background-color: rgb(252, 248, 238);
-            box-shadow: 0px 0px 18px 0px rgba(203, 41, 47, 0.21);
+           @extend %shadow-sm;
             overflow: hidden;
             margin-bottom: $g-margin * 3/2;
             display: flex;
@@ -1108,43 +1107,12 @@ footer {
 }
 
 // register
-.red-bg{
-    background-color: #feeeee;
-}
-.full-height{
-    min-height: 100vh;
-}
-.w-bg{
-    position: relative;
-    &:before{
-        content: "";
-        position: absolute;
-        background: url('../img/bg.png') no-repeat;
-        background-size: contain;
-        width: 400px;
-        height: 400px;
-        top: -80px;
-        left: -80px;
-        z-index: 1;
-    }
-    &:after{
-        content: "";
-        position: absolute;
-        background: url('../img/bg.png') no-repeat;
-        background-size: contain;
-        width: 400px;
-        height: 400px;
-        bottom: -80px;
-        right: -80px;
-        z-index: 1;
-    }
-}
 
 .all-form{
     border-radius: 17px;
     overflow: hidden;
     background-color: rgb(255, 252, 252);
-    box-shadow: 0px 0px 18px 0px rgba(203, 41, 47, 0.21);
+   @extend %shadow-sm;
     z-index: 2;
     position: relative;
 
@@ -1295,19 +1263,24 @@ footer {
 
 // about page
 .banner-block{
-    // background: url('../img/dynamic/bgs/banner.png') no-repeat 100% 100%;
-    // background-size: cover;
-    // background-position: center;
+    background: url('../img/dynamic/bgs/banner.png') no-repeat 100% 100%;
+    background-size: cover;
+    background-position: center;
     padding: 0;
-    margin: 0 0 50px;
+    margin: 0;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     img{
         width: 100%;
-        height: 450px;
         max-height: 100%;
     }
 }
 .top-block{
-    margin-top: -200px;
+    margin-top: -110px;
 }
 
 .sub-content{
@@ -1326,9 +1299,6 @@ footer {
 }
 .main-goal{
     padding: 60px 0;
-    .sub-content{
-        margin-top: 100px;
-    }
     .right-grid{
         padding: 30px;
         border: 2px solid $main-color;
@@ -1341,12 +1311,11 @@ footer {
         }
     }
     .left-grid{
-        margin-top: -50px;
         margin-right: -50px;
         box-shadow: 0px 0px 18px 0px rgba(203, 41, 47, 0.72);
         img{
             width: 100%;
-            max-height: 362px;
+            height: 362px;
         }
     }
 }
@@ -1370,3 +1339,104 @@ footer {
         }
     }
 }
+
+// calling-page
+.page-title{
+    width: 50%;
+    margin: auto;
+    h1{
+        font-size: 34px;
+        font-family: $font-meduim;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 16px;
+        font-family: $font-meduim;
+        padding: 0 50px;
+    }
+}
+
+.branches-list{
+    margin-top: 50px;
+    .single-branch{
+        background: url('../img/bg.png') no-repeat;
+        background-size: auto;
+        background-position: center bottom;
+        text-align: center;
+        padding-bottom: 25px;
+        margin-bottom: 50px;
+
+        .branch-header{
+            font-size: 18px;
+            font-family: $font-meduim;
+            margin-bottom: 30px;
+
+            .branch-icon{
+                display: inline-block;
+                margin-left: 10px;
+            }
+        }
+
+        p{
+            margin-bottom: 15px;
+        }
+        .main-color{
+            font-family: $font-meduim;
+        }
+
+        .work-times{
+            margin-top: 30px;
+            .sub-header{
+                font-family: $font-meduim;
+                font-size: 17px;
+            }
+        }
+        
+        .rev-dir{
+            direction: ltr;
+        }
+    }
+}
+// contact
+.single-way{
+    display: flex;
+    align-items: center;
+
+    .icon{
+        max-width: 35px;
+        @extend %ease;
+
+        img{
+            width: 100%;
+        }
+    }
+    p{
+        margin-bottom: 0;
+        width: calc(100% - 35px);
+        margin-right: 5px;
+        font-size: 16px;
+    }
+    &:hover{
+        .icon{
+            animation: roll 1s;
+            transform: rotate(30deg);
+        }
+    }
+}
+.custom-form{
+    margin-top: 50px;
+
+    .btn{
+        margin-top: 30px;
+        @extend %shadow-lg;
+    }
+}
+
+@keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
