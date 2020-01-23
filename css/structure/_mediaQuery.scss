@@ -528,6 +528,27 @@
     .single-way {
         margin-bottom: 15px;
     }
+
+    // profile pages
+    .profile-content {
+        .user-links{
+            width: 100%;
+            .single-link {
+                .icon {
+                    width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                    img{
+                        max-height: 26px;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -822,6 +843,60 @@
     .top-block {
         margin-top: -70px;
     }
+
+    // brands page
+    .brands-content {
+        margin: 0;
+        .single-brand {
+            margin-bottom: 20px;
+            .brand-img{
+                width: 150px;
+                height: 150px;
+                line-height: 150px;
+                img{
+                    max-width: 130px;
+                }
+            }
+            .brand-body {
+                margin-top: 15px;
+                h5 {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 14px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // profile pages
+    .profile-content {
+        .avatar-upload {
+            top: -60px;
+        }
+        .user-links{
+            li{
+                width: 33%;
+            }
+            width: 100%;
+            .single-link {
+                .icon {
+                    width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                    img{
+                        max-height: 26px;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -876,9 +951,10 @@
     }
 
     // contact{
-        .btn{
-            font-size: 16px;
-        }
+    .btn{
+        font-size: 16px;
+    }
+
     .custom-form {
         .form-group {
                 align-items: flex-start; 
@@ -893,6 +969,43 @@
         .form-control{
             width: 100%;
             margin-right: 0;
+        }
+    }
+
+    // profile pages
+    .profile-content {
+        .user-links{
+            li{
+                width: 50%;
+                margin-bottom: 25px;
+            }
+            .single-link {
+                .icon {
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .form-edit{
+        .form-group {
+            align-items: flex-start;
+            flex-direction: column;
+            text-align: right;
+        }
+        .label {
+            width: auto;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+        .form-control {
+            width: 100%;
+            margin-right: 0;
+            padding: 10px;
         }
     }
 }

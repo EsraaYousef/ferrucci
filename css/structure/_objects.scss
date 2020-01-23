@@ -1,4 +1,5 @@
 html {
+    scroll-behavior: smooth;
     &.noscroll {
         overflow   : hidden !important;
         // position: fixed;
@@ -35,6 +36,10 @@ html {
         &:focus {
             border-color: #ce161a !important;
         }
+    }
+
+    &.no-shadow{
+        box-shadow: none;
     }
 }
 

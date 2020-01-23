@@ -1,4 +1,4 @@
-body::-webkit-scrollbar-track, .scrollToTop, .scrollToTop:hover, .scrollToTop:focus, .navbar, .navbar .close-menu {
+body::-webkit-scrollbar-track, .scrollToTop, .scrollToTop:hover, .scrollToTop:focus, .navbar, .navbar .close-menu, .brands-content .single-brand:hover, .profile-content .user-links .single-link .icon {
   -webkit-box-shadow: 0px 0px 10px rgba(203, 41, 47, 0.4);
   box-shadow: 0px 0px 10px rgba(203, 41, 47, 0.4); }
 
@@ -6,11 +6,11 @@ body::-webkit-scrollbar-track, .scrollToTop, .scrollToTop:hover, .scrollToTop:fo
   -webkit-box-shadow: 0px 0px 18px rgba(203, 41, 47, 0.21);
   box-shadow: 0px 0px 18px rgba(203, 41, 47, 0.21); }
 
-.custom-form .btn {
+.custom-form .btn, .brands-content .single-brand .brand-img {
   -webkit-box-shadow: 0px 0px 18px rgba(203, 41, 47, 0.75);
   box-shadow: 0px 0px 18px rgba(203, 41, 47, 0.75); }
 
-.btn, .btn:hover, .btn:focus, .more-link span, .more-link .fas, .more-link:hover span, .dropdown-menu .dropdown-item a, .dropdown-menu .dropdown-item a:hover, .navbar .navbar-brand img, .navbar .navbar-nav .nav-item .nav-link, .navbar .navbar-nav.left-links li a, .navbar .navbar-nav.left-links li a:hover, .navbar .menu-wrapper, .second-slider .item.slick-slide img, .second-slider .item.slick-slide:hover img, .newest-block .data-filters ul.data-filters-links li, .newest-block .data-filters ul.data-filters-links li.active, .newest-block .data-filters ul.data-filters-items .card, .newest-block .data-filters ul.data-filters-items .card .card-image img, .newest-block .data-filters ul.data-filters-items .card:hover, .newest-block .data-filters ul.data-filters-items .card:hover .card-image img, .common-block .all-groups .single-group .form-inline, footer .footer-link a, footer .footer-link a:hover, footer .center-list .footer-link, footer .footer-social li a, footer .footer-social li a:hover, footer .footer-social li a:hover span, .single-way .icon {
+.btn, .btn:hover, .btn:focus, .more-link span, .more-link .fas, .more-link:hover span, .dropdown-menu .dropdown-item a, .dropdown-menu .dropdown-item a:hover, .navbar .navbar-brand img, .navbar .navbar-nav .nav-item .nav-link, .navbar .navbar-nav.left-links li a, .navbar .navbar-nav.left-links li a:hover, .navbar .menu-wrapper, .second-slider .item.slick-slide img, .second-slider .item.slick-slide:hover img, .newest-block .data-filters ul.data-filters-links li, .newest-block .data-filters ul.data-filters-links li.active, .newest-block .data-filters ul.data-filters-items .card, .newest-block .data-filters ul.data-filters-items .card .card-image img, .newest-block .data-filters ul.data-filters-items .card:hover, .newest-block .data-filters ul.data-filters-items .card:hover .card-image img, .common-block .all-groups .single-group .form-inline, footer .footer-link a, footer .footer-link a:hover, footer .center-list .footer-link, footer .footer-social li a, footer .footer-social li a:hover, footer .footer-social li a:hover span, .single-way .icon, .brands-content .single-brand, .brands-content .single-brand .brand-img img, .brands-content .single-brand:hover, .profile-content .user-links .single-link .icon img, .profile-content .user-links .single-link p, .profile-content .user-links .single-link:hover .icon img, .profile-content .user-links .single-link:hover p, .address-form .form-control, .address-form .remove-address, .address-form .form-group, .address-form .form-group:hover, .address-form .form-group:hover .form-control, .address-form .form-group:hover .form-control::placeholder, .address-form .form-group:hover .remove-address {
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -95,8 +95,10 @@ h5,
 h6 {
   font-family: "Cairo-Bold"; }
 
-html.noscroll {
-  overflow: hidden !important; }
+html {
+  scroll-behavior: smooth; }
+  html.noscroll {
+    overflow: hidden !important; }
 
 .form-group {
   margin-bottom: 30px; }
@@ -123,6 +125,8 @@ html.noscroll {
     border-color: #ce161a !important; }
     .form-control.error:focus {
       border-color: #ce161a !important; }
+  .form-control.no-shadow {
+    box-shadow: none; }
 
 textarea,
 textarea.form-control {
@@ -602,7 +606,7 @@ footer {
           transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
   .navbar.fixed-top {
     background-color: #ffffff;
-    z-index: 9; }
+    z-index: 9999; }
   .navbar .btn.btn-bordered {
     width: 100px;
     height: 35px;
@@ -1427,19 +1431,164 @@ footer {
     margin-right: 5px;
     font-size: 16px; }
   .single-way:hover .icon {
-    animation: roll 1s;
-    transform: rotate(30deg); }
+    animation: roll 1s; }
 
 .custom-form {
   margin-top: 50px; }
   .custom-form .btn {
     margin-top: 30px; }
 
+.brands-content {
+  margin-top: 50px; }
+  .brands-content .single-brand {
+    padding: 30px;
+    border-radius: 15px; }
+    .brands-content .single-brand .brand-img {
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #000000;
+      margin: auto; }
+    .brands-content .single-brand .brand-body {
+      padding: 0;
+      margin-top: 30px;
+      direction: initial; }
+      .brands-content .single-brand .brand-body h5 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px; }
+      .brands-content .single-brand .brand-body p {
+        font-size: 16px;
+        font-family: "Cairo-SemiBold";
+        width: 80%;
+        margin: 0 auto; }
+    .brands-content .single-brand:hover .brand-img img {
+      animation: roll-two 1s; }
+
+.profile-content {
+  margin-top: 80px;
+  position: relative; }
+  .profile-content .avatar-upload {
+    position: absolute;
+    top: -85px;
+    margin: 0px auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9; }
+    .profile-content .avatar-upload .avatar-edit input + label {
+      background: #feeeee; }
+      .profile-content .avatar-upload .avatar-edit input + label:after {
+        color: #cb292f; }
+  .profile-content .user-links {
+    width: 80%;
+    margin: 85px auto 0;
+    padding: 0;
+    position: relative;
+    z-index: 9;
+    display: block;
+    text-align: center; }
+    .profile-content .user-links li {
+      width: 25%;
+      padding: 0 15px;
+      margin: 0 -15px 50px;
+      display: inline-block;
+      text-align: center; }
+    .profile-content .user-links .single-link .icon {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: #ffffff; }
+      .profile-content .user-links .single-link .icon img {
+        max-height: 32px; }
+    .profile-content .user-links .single-link p {
+      display: block;
+      font-size: 18px;
+      line-height: 28px;
+      margin: 15px auto 0;
+      font-family: "Cairo-SemiBold"; }
+    .profile-content .user-links .single-link:hover .icon img {
+      animation: roll-two 1s; }
+    .profile-content .user-links .single-link:hover p {
+      color: #000000; }
+
+.form-edit {
+  margin-top: 50px; }
+  .form-edit .form-group {
+    display: flex;
+    align-items: center; }
+  .form-edit .label {
+    width: 25%;
+    margin: 0;
+    color: #cb292f;
+    font-family: "Cairo-SemiBold";
+    font-size: 16px; }
+  .form-edit .form-control {
+    width: 75%;
+    color: #767676;
+    font-size: 14px;
+    font-family: "Cairo-SemiBold"; }
+    .form-edit .form-control::placeholder {
+      color: #767676;
+      font-size: 14px;
+      font-family: "Cairo-SemiBold"; }
+
+.address-form {
+  padding: 30px 0; }
+  .address-form .form-control {
+    background-color: transparent;
+    border-radius: 0;
+    color: #767676;
+    font-size: 16px; }
+    .address-form .form-control::placeholder {
+      font-size: 16px; }
+  .address-form .map-icon i {
+    font-size: 18px; }
+  .address-form .remove-address {
+    width: 25px;
+    height: 25px;
+    line-height: 27px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #767676;
+    color: #ffffff;
+    position: absolute;
+    left: 60px;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer; }
+  .address-form .form-group {
+    position: relative;
+    padding: 30px 60px; }
+    .address-form .form-group:not(:last-of-type) {
+      margin-bottom: 0;
+      border-bottom: 1px solid rgba(203, 42, 47, 0.62); }
+    .address-form .form-group:last-of-type {
+      margin-bottom: 0; }
+    .address-form .form-group:hover {
+      color: #cb292f; }
+      .address-form .form-group:hover .form-control {
+        color: #cb292f; }
+        .address-form .form-group:hover .form-control::placeholder {
+          color: #cb292f; }
+      .address-form .form-group:hover .remove-address {
+        background-color: #cb292f; }
+
 @keyframes roll {
   0% {
     transform: rotate(0); }
   100% {
     transform: rotate(360deg); } }
+@keyframes roll-two {
+  0% {
+    transform: rotateY(0); }
+  100% {
+    transform: rotateY(360deg); } }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
@@ -1733,7 +1882,19 @@ footer {
     margin-right: -40px; }
 
   .single-way {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+
+  .profile-content .user-links {
+    width: 100%; }
+    .profile-content .user-links .single-link .icon {
+      width: 80px;
+      height: 80px;
+      line-height: 80px; }
+      .profile-content .user-links .single-link .icon img {
+        max-height: 26px; }
+    .profile-content .user-links .single-link p {
+      font-size: 14px;
+      line-height: 24px; } }
 @media (max-width: 767px) {
   body {
     font-size: 14px;
@@ -1933,7 +2094,42 @@ footer {
       margin-top: 15px; }
 
   .top-block {
-    margin-top: -70px; } }
+    margin-top: -70px; }
+
+  .brands-content {
+    margin: 0; }
+    .brands-content .single-brand {
+      margin-bottom: 20px; }
+      .brands-content .single-brand .brand-img {
+        width: 150px;
+        height: 150px;
+        line-height: 150px; }
+        .brands-content .single-brand .brand-img img {
+          max-width: 130px; }
+      .brands-content .single-brand .brand-body {
+        margin-top: 15px; }
+        .brands-content .single-brand .brand-body h5 {
+          font-size: 18px;
+          margin-bottom: 10px; }
+        .brands-content .single-brand .brand-body p {
+          font-size: 14px;
+          width: 100%; }
+
+  .profile-content .avatar-upload {
+    top: -60px; }
+  .profile-content .user-links {
+    width: 100%; }
+    .profile-content .user-links li {
+      width: 33%; }
+    .profile-content .user-links .single-link .icon {
+      width: 80px;
+      height: 80px;
+      line-height: 80px; }
+      .profile-content .user-links .single-link .icon img {
+        max-height: 26px; }
+    .profile-content .user-links .single-link p {
+      font-size: 14px;
+      line-height: 24px; } }
 @media (max-width: 575px) {
   body {
     font-size: 13px;
@@ -1984,6 +2180,29 @@ footer {
     font-size: 13px; }
   .custom-form .form-control {
     width: 100%;
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  .profile-content .user-links li {
+    width: 50%;
+    margin-bottom: 25px; }
+  .profile-content .user-links .single-link .icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px; }
+  .profile-content .user-links .single-link p {
+    font-size: 13px; }
+
+  .form-edit .form-group {
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: right; }
+  .form-edit .label {
+    width: auto;
+    margin-bottom: 10px;
+    font-size: 13px; }
+  .form-edit .form-control {
+    width: 100%;
+    margin-right: 0;
+    padding: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

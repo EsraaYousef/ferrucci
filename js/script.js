@@ -210,7 +210,19 @@ $(document).ready(function() {
     $(this).toggleClass("liked");
     e.preventDefault();
   });
+
+  // match height
+  $(function() {
+    $('.single-brand p').matchHeight();
+  });
+
+  //remove address
+  $(".remove-address").click(function () {
+    $(this).closest(".form-group").slideUp().remove()
 });
+});
+
+
 // loading window
 $(window).on("load", function() {
   $("body").css("overflow", "hidden");
