@@ -390,16 +390,19 @@
                 }
 
                 &.data-filters-items {
-                    .card {
-                        .card-image {
-                            height: 220px;
-
-                            img {
-                                height: auto;
-                                width: 100%;
-                            }
-                        }
-                    }
+                }
+            }
+        }
+    }
+    
+    .card {
+        &.product-item{
+            .card-image {
+                height: 220px;
+    
+                img {
+                    height: auto;
+                    width: 100%;
                 }
             }
         }
@@ -559,7 +562,7 @@
 
     section,
     footer {
-        padding: $g-padding * 3/2 0;
+        padding:25px 0;
         height: auto;
         min-height: auto !important;
         display: block;
@@ -616,32 +619,30 @@
                         line-height: 36px;
                     }
                 }
-
-                &.data-filters-items {
-                    .card {
-                        margin-bottom: 20px;
-
-                        .card-body {
-                            .product-name {
-                                margin-bottom: 10px;
-
-                                p.product-price {
-                                    margin-bottom: 10px;
-                                }
-                            }
-                        }
-
-                        .card-image {
-                            width: 200px;
-                            height: 200px;
-                            margin: auto;
-                        }
-                    }
-                }
             }
         }
     }
+    .card {
+        &.product-item{
+            margin-bottom: 20px;
 
+            .card-body {
+                .product-name {
+                    margin-bottom: 10px;
+
+                    p.product-price {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .card-image {
+                width: 240px;
+                height: 200px;
+                margin: auto;
+            }
+        }
+    }
     .branches-block .map-area {
         margin-bottom: 0;
     }
@@ -655,8 +656,18 @@
         font-size: 18px;
     }
 
-    .second-slider .item.slick-slide {
-        height: 333px;
+    .second-slider {
+        .item.slick-slide{
+            height: 200px;
+        }
+
+        .item .item-overlay p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
     }
     .dropdown-menu{
         padding: 10px;
@@ -897,6 +908,67 @@
             }
         }
     }
+
+    .coupons-list{
+        li {
+            padding: 15px;
+            .icon{
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+
+                img{
+                    max-width: 25px;
+                }
+            }
+            .text{
+                font-size: 13px;
+                padding-right: 10px;
+                width: calc(100% - 35px);
+            }
+        }
+    }
+
+    .content-list{
+        
+        &.balance-block{
+            padding: 30px 0;
+            .wallet-img {
+                width: 70px;
+                margin: 0 auto 15px;
+            }
+            .available-balance {
+                    font-size: 16px;
+            }
+        }
+        .payment-header h5{
+            font-size: 16px;
+        }
+    }
+
+    .form-edit{
+        &.form-edit-info{
+            padding: 30px 15px;
+        }
+    }
+
+    .favourite-list,.form-edit {
+        margin-top: 25px;
+    }
+    .left-grid{
+        &.title{
+            margin-top: 30px;
+            padding: 0;
+
+            h3{
+                margin-right: 30px;
+            }
+
+            .form-group {
+                padding: 15px;
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -973,6 +1045,13 @@
     }
 
     // profile pages
+
+    .card{
+        &.product-item{
+            width: max-content;
+            margin: 0 auto 20px;
+        }
+    }
     .profile-content {
         .user-links{
             li{
@@ -981,9 +1060,12 @@
             }
             .single-link {
                 .icon {
-                    width: 60px;
-                    height: 60px;
-                    line-height: 60px;
+                    width: 55px;
+                    height: 55px;
+                    line-height: 55px;
+                    img{
+                        max-width: 30px;
+                    }
                 }
                 p{
                     font-size: 13px;

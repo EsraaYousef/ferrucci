@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Ferrucci" />
+
+    <!-- Search Engine -->
+    <meta name="description" content="description about Ferrucci" />
+    <meta name="image" content="img/logo.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="page title" />
+    <meta name="twitter:description" content="description about Ferrucci" />
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="page title" />
+    <meta name="og:description" content="description about Ferrucci" />
+    <meta name="og:type" content="website" />
+
+    <!-- frameworks CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/slick/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/slick/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/slick/slick.css" />
+    <link rel="stylesheet" href="css/slick/slick-theme.css" />
+    <!-- custom style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Ferrucci</title>
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon" />
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/popper.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+    <!-- loading window -->
+    <div class="loading-window">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- start header -->
+    <header>
+        <!-- main menu -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler menu-wrapper" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="hamburger-menu"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" class="show lozad" alt="Ferrucci">
+                </a>
+                <ul class="only-mobile icon-links list-unstyled">
+                    <li>
+                        <a href="favourite.html" class="main-color"><img src="img/icons/heart.png" alt="heart"></a>
+                    </li>
+                    <li>
+                        <a href="cart.html" class="main-color"><img src="img/icons/cart.png" alt="shopping cart"></a>
+                    </li>
+                    <!-- if not logged in -->
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle no-caret" id="dropdownMenulogin" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="icon main-color">
+                                    <img src="img/icons/account.png" alt="menu">
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenulogin">
+                                <li class="dropdown-item">
+                                    <a href="login.html">تسجيل دخول</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="register.html">انشاء حساب</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- if logged in -->
+                    <li>
+                        <button class="navbar-toggler second-menu visible-lg" type="button" data-toggle="collapse"
+                            data-target="#secondCollapse" aria-controls="secondCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="icon main-color">
+                                <img src="img/icons/menu.png" alt="menu">
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle no-caret" href="#" role="button"
+                                id="dropdownMenuLocation" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">موقع المحلات</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLocation">
+                                <li class="dropdown-item">
+                                    <a class="" href="#">الخبر
+                                        <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a class="" href="location-1.html">شارع بندر (أ)</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="" href="location-1.html">مول الظهران</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="" href="location-1.html">مول الراشد</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="" href="location-1.html">شارع بندر (11)</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="" href="location-1.html">الدمام</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="" href="location-1.html">جبيل</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="" href="location-1.html">الاحساء</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">الرياض
+                                        <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a class="" href="location-2.html">طريق العليا</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="" href="location-2.html">طريق العليا</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="" href="location-2.html">مول النجود</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">جدة
+                                        <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a class="" href="location-3.html">الاحساء</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle no-caret" href="#" role="button"
+                                id="dropdownMenuProducts" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">المنتجات</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuProducts">
+                                <li class="dropdown-item">
+                                    <a href="">المفروشات
+                                        <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a href="products.html">بطانيات</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">مخدات</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">غطاء المخدات</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">ملاءات السرير</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">وسائد الفراش</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">لحافات</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">غطاء لحاف</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">المناشف
+                                        <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a href="products.html">بطانيات</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">مخدات</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">غطاء المخدات</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">وسائد الفراش</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">لحافات</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">غطاء لحاف</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">اللحافات
+                                        <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a href="products.html">بطانيات</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">ملاءات السرير</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">وسائد الفراش</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">روب حمام
+                                        <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a href="products.html">غطاء المخدات</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">وسائد الفراش</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="products.html">لحافات</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle no-caret" href="#" role="button" id="dropdownMenuBrands"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">الماركات</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuBrands">
+                                <li class="dropdown-item">
+                                    <a href="#">المفروشات
+                                        <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    </a>
+                                    <ul class="submenu dropdown-menu lg-menu">
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">christy</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">gay laroche</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">croscill</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">j.queen</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">dkny</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">laura ashely</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">escada</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">nina ricci</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">espirit</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">pierre cardin</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">Ferrucci</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">soft cotton</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">gf ferrari</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">soft cotton</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">guanciale</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">zorlu</a></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">المناشف
+                                        <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    </a>
+                                    <ul class="submenu dropdown-menu lg-menu">
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">escada</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">nina ricci</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">espirit</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">pierre cardin</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">Ferrucci</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">soft cotton</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">guanciale</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">zorlu</a></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">اللحافات
+                                        <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    </a>
+                                    <ul class="submenu dropdown-menu lg-menu">
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">christy</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">gay laroche</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">croscill</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">j.queen</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">dkny</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">laura ashely</a></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">روب حمام
+                                        <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                                    </a>
+                                    <ul class="submenu dropdown-menu lg-menu">
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">christy</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">gay laroche</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">croscill</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">j.queen</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="dropdown-item"><a href="brands.html">dkny</a></span>
+                                            <span class="dropdown-item"><a href="brands.html">laura ashely</a></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav left-links hidden-mobile">
+                        <li>
+                            <!-- show if arabic -->
+                            <a href="#" class="lang-icon"><img src="img/icons/saudi-arabia.png" alt="img"></a>
+                            <!-- show if english -->
+                            <!-- <a href="#" class="lang-icon"><img src="img/icons/usa.png" alt="img"></a> -->
+                        </li>
+                        <li>
+                            <div class="search-wrapper">
+                                <button type="button" class="btn btn-transparent search-btn">
+                                    <img src="img/icons/search.png" alt="search">
+                                </button>
+                                <div class="search-popup">
+                                    <div class="search-popup--bg"></div>
+                                    <form action="" class="search-form">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <input type="text" class="form-control w-border" placeholder="ابحث هنا">
+                                            <button type="submit" class="btn btn-transparent">
+                                                <img src="img/icons/search.png" alt="search">
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="favourite.html" class="main-color"><img src="img/icons/heart.png" alt="heart"></a>
+                        </li>
+                        <li>
+                            <a href="cart.html" class="main-color"><img src="img/icons/cart.png" alt="shopping cart"></a>
+                        </li>
+                        <!-- if not logged in -->
+                        <li>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle no-caret" id="dropdownMenulogin" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <span class="icon main-color">
+                                        <img src="img/icons/account.png" alt="img">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenulogin">
+                                    <li class="dropdown-item">
+                                        <a href="login.html">تسجيل دخول</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="register.html">انشاء حساب</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- if logged in -->
+                        <!-- <li><a href="#"><img src="img/icons/account.png" alt="img"></a></li> -->
+                        <li>
+                            <button class="navbar-toggler second-menu visible-lg" type="button" data-toggle="collapse"
+                                data-target="#secondCollapse" aria-controls="secondCollapse" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="icon main-color">
+                                    <img src="img/icons/menu.png" alt="menu">
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- if logged in -->
+                <div class="second-collapse">
+                    <div class="collapse navbar-collapse second-collapse" id="secondCollapse">
+                        <span class="close-menu"><i class="fa fa-times"></i></span>
+                        <div class="side-menu-logo">
+                            <a href="index.html">
+                                <img src="img/logo-side-menu.png" alt="Ferrucci">
+                            </a>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">حسابي</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">المفضلة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">الطلبات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">المشتريات</a>
+                            </li>
+                        </ul>
+                        <h3 class="light-bg main-color main-title">الفئات</h3>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">مفروشات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">لحافات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">روب حمام</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">الطلبات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">بطانيات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">مناشف</a>
+                            </li>
+                        </ul>
+                        <h3 class="light-bg main-color main-title">الفئات</h3>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">المملكة العربية السعودية
+                            </li>
+                        </ul>
+                        <h3 class="light-bg main-color main-title">اللغة</h3>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">العربية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+    <!-- start all content -->
+    <main>
+
+        <!-- start banner  -->
+        <section class="banner-block">
+            <div class="page-title center">
+                <h1 class="font-white">حسابي</h1>
+                <p class="font-white">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى.
+                </p>
+            </div>
+        </section>
+        <!-- end banner  -->
+
+        <!-- start second content -->
+        <section class="main-content">
+            <div class="container">
+                <div class="profile-content">
+                    <form action="">
+                        <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                <label for="imageUpload"></label>
+                            </div>
+                            <div class="avatar-preview">
+                                <div id="imagePreview" style="background-image: url('img/dynamic/avatars/person.png')">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="w-radius w-shadow md-width w-bg light-bg">
+                        <ul class="list-unstyled user-links">
+                            <li>
+                                <a href="personal-info.html" class="single-link">
+                                    <span class="icon"><img src="img/icons/profile/user.png" alt="img"></span>
+                                    <p class="main-color">البيانات الشخصية</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="favourite.html" class="single-link">
+                                    <span class="icon"><img src="img/icons/profile/heart.png" alt="img"></span>
+                                    <p class="main-color">المفضلة</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="wallet.html" class="single-link">
+                                    <span class="icon"><img src="img/icons/profile/file.png" alt="img"></span>
+                                    <p class="main-color">الطلبات</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="single-link">
+                                    <span class="icon"><img src="img/icons/profile/shopping.png" alt="img"></span>
+                                    <p class="main-color">المشتريات</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="adresses.html" class="single-link">
+                                    <span class="icon"><img src="img/icons/profile/map.png" alt="img"></span>
+                                    <p class="main-color">عناوين الشحن</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="coupons.html" class="single-link">
+                                    <span class="icon"><img src="img/icons/profile/discount.png" alt="img"></span>
+                                    <p class="main-color">الكوبونات</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="wallet.html" class="single-link active">
+                                    <span class="icon"><img src="img/icons/profile/wallet.png" alt="img"></span>
+                                    <p class="main-color">محفظتي</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pay-credit.html" class="single-link">
+                                    <span class="icon"><img src="img/icons/profile/pay.png" alt="img"></span>
+                                    <p class="main-color">بطاقة الدفع</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end second content -->
+
+        <!-- start second content -->
+        <section>
+            <div class="container">
+                <div class="title center">
+                    <h3 class="main-title wow fadeInDown">بطاقة الدفع</h3>
+                </div>
+                <div class="w-radius w-shadow light-bg form-edit">
+                    <div class="content-list balance-block">
+                        <div class="wallet-img">
+                            <img src="img/icons/profile/wallet.png" alt="img">
+                        </div>
+                        <div class="available-balance center">
+                            <p class="main-color">قيمة الرصيد الخاص بي :  </p> 
+                            <p class="font-color total"> 500.00  رس</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end second content -->
+
+        <!-- start brand section -->
+        <section class="parnters-block">
+            <div class="container">
+                <div class="brands-slider">
+                    <div class="brand item">
+                        <div class="brand-img">
+                            <img src="img/dynamic/brands/01.png" alt="brand-img" class="lozad">
+                        </div>
+                    </div>
+                    <div class="brand item">
+                        <div class="brand-img">
+                            <img src="img/dynamic/brands/02.png" alt="brand-img" class="lozad">
+                        </div>
+                    </div>
+                    <div class="brand item">
+                        <div class="brand-img">
+                            <img src="img/dynamic/brands/03.png" alt="brand-img" class="lozad">
+                        </div>
+                    </div>
+                    <div class="brand item">
+                        <div class="brand-img">
+                            <img src="img/dynamic/brands/04.png" alt="brand-img" class="lozad">
+                        </div>
+                    </div>
+                    <div class="brand item">
+                        <div class="brand-img">
+                            <img src="img/dynamic/brands/05.png" alt="brand-img" class="lozad">
+                        </div>
+                    </div>
+                    <div class="brand item">
+                        <div class="brand-img">
+                            <img src="img/dynamic/brands/01.png" alt="brand-img" class="lozad">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end brand section -->
+        <!-- start footer -->
+        <footer class="black-bg">
+            <div class="container">
+                <div class="top-footer">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="Ferrucci" class="img-fluid lozad">
+                    </div>
+                    <div class="form-footer">
+                        <p class="main-color">للحصول على التحديثات</p>
+                        <form action="" class="subscribe">
+                            <div class="form-group custom">
+                                <input type="email" placeholder="يرجى إدخال عنوان البريد الإلكتروني "
+                                    class="form-control">
+                                <button type="submit" class="btn btn-second">عرض</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="single-col">
+                            <div class="header-col">
+                                <p class="font-white">
+                                    إن متخصصة بالمفـارش ذات الجودة العالية حيث جعلتنا سمعتنا الطيبة نحـظى بمجال واسع في
+                                    اسـواق المملكة العربية السعودية مما شجعنا على توسيع اعمالنا بامتـلاك مجمـوعة من
+                                    المـاركات العـالمية وتوسع فروعـنا في ارقـى المراكـز و الاسواق التجـارية بالمملكة
+                                    العربية
+                                    السعودية .
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="single-col">
+                            <div class="header-col">
+                                <h3>معلومات عامة</h3>
+                            </div>
+                            <ul class="list-unstyled center-list">
+                                <li class="footer-link">
+                                    <a href="terms-conditions.html" class="link">الشروط والأحكام</a>
+                                </li>
+                                <li class="footer-link">
+                                    <a href="policy.html" class="link">سياسة الخصوصية</a>
+                                </li>
+                                <li class="footer-link">
+                                    <a href="calling.html" class="link">الاتصال</a>
+                                </li>
+                                <li class="footer-link">
+                                    <a href="delivery.html" class="link">التسليم</a>
+                                </li>
+                                <li class="footer-link">
+                                    <a href="ask-answer.html" class="link">أسئلة وأجوبة</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="single-col">
+                            <div class="header-col">
+                                <h3>تواصل معنا </h3>
+                            </div>
+                            <ul class="footer-social list-unstyled">
+                                <li class="">
+                                    <a href="#" target="_blank">
+                                        <span class="icon"><i class="fab fa-facebook-f"></i></span>
+                                        <span class="font-white">Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" target="_blank">
+                                        <span class="icon"><i class="fab fa-twitter"></i></span>
+                                        <span class="font-white">Twitter</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" target="_blank">
+                                        <span class="icon"><i class="fab fa-youtube"></i></span>
+                                        <span class="font-white">Youtube</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" target="_blank">
+                                        <span class="icon"><i class="fab fa-linkedin-in"></i></span>
+                                        <span class="font-white">Linkedin</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="single-col">
+                            <div class="header-col">
+                                <h3>اتصل بنا </h3>
+                            </div>
+                            <ul class="footer-social list-unstyled">
+                                <li class="">
+                                    <a href="#" target="_blank">
+                                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                                        <span class="font-white">P.O. Box 2341 Al Khobar
+                                            Saudi Arabia 31952</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" target="_blank">
+                                        <span class="icon"><i class="fas fa-phone"></i></span>
+                                        <span class="font-white">013-8961100</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" target="_blank">
+                                        <span class="icon"><img src="img/icons/fax.png"></span>
+                                        <span class="font-white">013-8961100</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" target="_blank">
+                                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                                        <span class="font-white">info@ferrucci-sa.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right center">
+                    <p class="center"> Designed By <a href="#" target="_blank"> Jaadara</a> 2019 .Ferrucci .Al L Rights
+                        Reserved </p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        <!-- mobile search -->
+        <div class="only-mobile search-wrapper">
+            <button type="button" class="btn btn-transparent search-btn">
+                <img src="img/icons/search.png" alt="search">
+                <span class="close"><i class="fas fa-times"></i></span>
+            </button>
+            <div class="search-popup">
+                <div class="search-popup--bg"></div>
+                <form action="" class="search-form">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <input type="text" class="form-control w-border" placeholder="ابحث هنا">
+                        <button type="submit" class="btn btn-transparent">
+                            <img src="img/icons/search.png" alt="search">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- end content -->
+
+    <!-- scrollToTop -->
+    <button type="button" class="btn scrollToTop">
+        <i class="fas fa-chevron-up icon"></i>
+    </button>
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lazy.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/slick/owl.carousel.js"></script>
+    <script src="js/slick/slick.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- display only if map -->
+    <!-- <script src="js/map.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx--BILIM2LjZBxVMjGYVb8YqrY-Vk_Yk&callback=initMap">
+    </script> -->
+
+</body>
+
+</html>
