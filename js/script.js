@@ -12,13 +12,13 @@ $(document).ready(function() {
   });
 
   // mobile menu
-  $(".menu-wrapper").on("click", function() {
-    $(".menu-wrapper").toggleClass("open");
-    $(".hamburger-menu").toggleClass("animate");
-    $(".navbar-nav").toggleClass("open");
-    $("html").toggleClass("noscroll");
-    $(".navbar-brand img.only-mobile").toggleClass("hidden");
-  });
+  // $(".menu-wrapper").on("click", function() {
+  //   $(".menu-wrapper").toggleClass("open");
+  //   $(".hamburger-menu").toggleClass("animate");
+  //   $(".navbar-nav").toggleClass("open");
+  //   $("html").toggleClass("noscroll");
+  //   $(".navbar-brand img.only-mobile").toggleClass("hidden");
+  // });
   $(".second-menu").on("click", function() {
     $(".second-menu").addClass("open");
     $(".navbar-nav").addClass("open");
@@ -33,25 +33,17 @@ $(document).ready(function() {
     $("body").removeClass("w-overlay");
   });
 
-  // search
-  // const findBtn = document.querySelector(".search-btn"),
-  //     searchPopup = document.querySelector(".search-popup--bg"),
-  //     searchForm = document.querySelector(".search-form")
-
-  // findBtn.addEventListener("click", function () {
-  //     searchPopup.classList.add("active");
-  //     searchForm.classList.add("active");
-  //     $(".search-form").fadeIn();
-  // });
-  // searchPopup.addEventListener("click", function () {
-  //     searchPopup.classList.remove("active");
-  //     searchForm.classList.remove("active");
-  //     $(".search-form").fadeOut();
-  // });
+  // search popup
   $(".search-btn").on("click", function() {
     $(".search-wrapper").toggleClass("active");
     $(".search-popup--bg").toggleClass("active");
     $(".search-form").toggleClass("active");
+  });
+  $(".close-search").on("click", function() {
+    $(".search-wrapper").removeClass("active");
+    $(".search-popup--bg").removeClass("active");
+    $(".search-form").removeClass("active");
+    $(".search-form").fadeOut();
   });
 
   // scrollToTop
@@ -202,6 +194,24 @@ $(document).ready(function() {
     });
   });
 
+  /*====== Data Filters cart ======*/
+  $(function() {
+    var links = $(".data-filters-product-links");
+    links.on("click", "li", function() {
+      var links = $(".data-filters-product-links li");
+      var items = $(".data-filters-product-items table tbody tr");
+      var filter = $(this).attr("data-filter");
+      links.removeClass("active");
+      $(this).addClass("active");
+      if (filter == "all") {
+        items.show();
+      } else {
+        items.hide();
+        $(".data-filters-product-items table tbody tr[data-filter=" + filter + "]").show();
+      }
+    });
+  });
+
   // select
   $(".single-select").select2();
 
@@ -232,6 +242,14 @@ $(document).ready(function() {
   $(".remove-address").click(function() {
     $(this)
       .closest(".product-item").parent()
+      .fadeOut()
+      // .remove();
+  });
+
+  //remove item cart
+  $(".remove-item").click(function() {
+    $(this)
+      .closest(".single-item")
       .fadeOut()
       // .remove();
   });
@@ -267,4 +285,68 @@ $(document).ready(function() {
   $("#imageUpload").change(function() {
     readURL(this);
   });
+});
+
+$(document).ready(function(){
+  $('.prview-img').slick({
+    rtl: true,
+    dots:false,
+    arrows: false,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.all-previews',
+  });
+  $('.all-previews').slick({
+    rtl: true,
+    dots: false,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.prview-img',
+    focusOnSelect: true,
+    responsive: [
+      {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+          slidesToScroll: 1
+      }
+    },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  // liked-btn
+  $(".liked-btn").click(function() {
+    $(this).toggleClass('liked');
+  });
+
+   //plus minus input
+   $(document).ready(function () {
+    $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+    });
+});
 });

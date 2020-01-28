@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/datepicker.min.css">
 
     <!-- fontawesome css -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -554,13 +555,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="wallet.html" class="single-link">
+                                <a href="order.html" class="single-link">
                                     <span class="icon"><img src="img/icons/profile/file.png" alt="img"></span>
                                     <p class="main-color">الطلبات</p>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="single-link">
+                                <a href="my-orders.html" class="single-link">
                                     <span class="icon"><img src="img/icons/profile/shopping.png" alt="img"></span>
                                     <p class="main-color">المشتريات</p>
                                 </a>
@@ -610,7 +611,7 @@
                                 <i class="fas fa-chevron-left"></i>
                             </span>
                         </div>
-                        <form action="">
+                        <form action="" class="md-width">
                             <div class="form-group">
                                 <label for="" class="label">اسم صاحب البطاقة</label>
                                 <input type="text" class="form-control red-bg no-shadow sm-rad" placeholder="شركة جدارة" required />
@@ -621,7 +622,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="" class="label">تاريخ الانتهاء</label>
-                                <input type="date" class="form-control red-bg no-shadow sm-rad" placeholder="20/5" required />
+                                <input input type="text" class="form-control red-bg no-shadow sm-rad" name="date" id="date" data-select="datepicker" placeholder="1-1-2020">
                             </div>
                             <div class="form-group">
                                 <label for="" class="label">CCV</label>
@@ -843,6 +844,7 @@
     <script src="js/slick/slick.js"></script>
     <script src="js/select2.min.js"></script>
     <script src="js/jquery.matchHeight-min.js"></script>
+    <script src="js/datepicker.min.js"></script>
     <script src="js/script.js"></script>
     <!-- display only if map -->
     <!-- <script src="js/map.js"></script>
