@@ -234,9 +234,9 @@ $(document).ready(function() {
       .remove();
   });
 
-  $(".add-address-btn").click(function() {
-    $(".edit-adress-block").append('<div class="form-group w-icon w-border"><span class="map-icon"><i class="fa fa-map-marker-alt"></i></span><input type="text" class="form-control no-shadow" placeholder="25 شارع الملك عبد العزيز - الرياض , السعودية"> <span class="remove-address auto-icon"><i class="fa fa-times"></i></span></div>')
-  });
+  // $(".add-address-btn").click(function() {
+  //   $(".edit-adress-block").append('<div class="form-group w-icon w-border"><span class="map-icon"><i class="fa fa-map-marker-alt"></i></span><input type="text" class="form-control no-shadow" placeholder="25 شارع الملك عبد العزيز - الرياض , السعودية"> <span class="remove-address auto-icon"><i class="fa fa-times"></i></span></div>')
+  // });
 
   //remove favourite item
   $(".remove-address").click(function() {

@@ -604,28 +604,37 @@
                 </div>
                 <div class="w-radius w-shadow light-bg form-edit">
                     <div class="address-form">
-                        <form action="">
+                        <form action="" class="needs-validation" novalidate>
                             <div class="edit-adress-block">
                                 <div class="form-group w-icon w-border">
                                     <span class="map-icon"><i class="fa fa-map-marker-alt"></i></span>
                                     <input type="text" class="form-control no-shadow"
                                         placeholder="25 شارع الملك عبد العزيز - الرياض , السعودية" disabled>
                                         <span class="remove-address auto-icon"><i class="fa fa-times"></i></span>
+                                        <div class="invalid-feedback">
+                                            من فضلك أدخل العنوان الصحيح
+                                       </div>
                                 </div>
                                 <div class="form-group w-icon w-border">
                                     <span class="map-icon"><i class="fa fa-map-marker-alt"></i></span>
                                     <input type="text" class="form-control no-shadow"
                                         placeholder="25 شارع الملك عبد العزيز - الرياض , السعودية" disabled>
                                         <span class="remove-address auto-icon"><i class="fa fa-times"></i></span>
+                                        <div class="invalid-feedback">
+                                            من فضلك أدخل العنوان الصحيح
+                                       </div>
                                 </div>
                                 <div class="form-group w-icon w-border">
                                     <span class="map-icon"><i class="fa fa-map-marker-alt"></i></span>
                                     <input type="text" class="form-control no-shadow"
                                         placeholder="25 شارع الملك عبد العزيز - الرياض , السعودية" disabled>
                                         <span class="remove-address auto-icon"><i class="fa fa-times"></i></span>
+                                        <div class="invalid-feedback">
+                                            من فضلك أدخل العنوان الصحيح
+                                       </div>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-main btn-lg add-address-btn">اضافة عنوان</button>
+                            <a href="#" class="btn btn-main btn-lg add-address-btn"  data-toggle="modal" data-target="#address-modal">اضافة عنوان</a>
                         </form>
                     </div>
                 </div>
@@ -828,6 +837,71 @@
     <button type="button" class="btn scrollToTop">
         <i class="fas fa-chevron-up icon"></i>
     </button>
+
+
+    <!--start add-address-model -->
+    <div class="modal fade address-modal" id="address-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                </button>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <div class="title center">
+                            <h3 class="main-title">اضافة عنوان</h3>
+                        </div>
+                        <form action="" class="needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group w-icon">
+                                        <select class="form-control country" required="">
+                                            <span class="inpt-icon"><i class="fas fa-flag"></i></span>
+                                            <option value="" selected="">اختر الدوله</option>
+                                            <option value="1"> السعودية</option>
+                                            <option value="2">الامارات</option>
+                                            <option value="3">مصر</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group w-icon">
+                                        <select class="form-control city" required="">
+                                            <span class="inpt-icon"><i class="fas fa-flag"></i></span>
+                                            <option value="" selected="">اختر المدينة</option>
+                                            <option value="1">مدينة 1</option>
+                                            <option value="2">مدينة 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group w-icon">
+                                        <input type="text" class="form-control red-bg" placeholder="الحى" required /><div class="invalid-feedback">
+                                            الرجاء ادخال الحى
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group w-icon">
+                                        <textarea  class="form-control red-bg" placeholder="تفاصيل العنوان" required>
+                                            </textarea>
+                                            <div class="invalid-feedback">
+                                            الرجاء ادخال الحى
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-main btn-lg" type="submit">
+                                اضافة
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end add-address-model -->
 
     <!-- JavaScript Libraries -->
     <script src="js/jquery-3.3.1.min.js"></script>

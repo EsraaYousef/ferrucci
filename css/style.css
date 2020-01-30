@@ -2889,6 +2889,9 @@ form.md-width {
   margin: 25px auto 0 0;
   font-size: 16px; }
 
+.address-modal form {
+  margin-top: 40px; }
+
 @keyframes right-to-left {
   from {
     transform: translate3d(100%, 0, 0); }
@@ -3809,7 +3812,20 @@ form.md-width {
     font-size: 14px; }
 
   .modal-open .modal.follow-order-modal .close i {
-    font-size: 13px; } }
+    font-size: 13px; }
+
+  .address-modal form {
+    margin-top: 20px; }
+
+  .form-edit .form-group {
+    padding: 10px; }
+  .form-edit .form-control {
+    font-size: 13px; }
+    .form-edit .form-control::placeholder {
+      font-size: 13px; }
+
+  .address-form .remove-address {
+    left: 0; } }
 @media (max-width: 575px) {
   body {
     font-size: 13px;
@@ -3912,7 +3928,14 @@ form.md-width {
         width: 100px;
         height: auto; }
   .all-form .right-grid .discover-list {
-    bottom: 20px; } }
+    bottom: 20px; }
+
+  .edit-adress-block .form-group {
+    align-items: center;
+    flex-direction: row;
+    text-align: right; }
+  .edit-adress-block .form-control {
+    width: 80%; } }
 @media (max-width: 540px) {
   .list.inline-list .list-option:nth-child(3n) {
     margin-left: 10px; }

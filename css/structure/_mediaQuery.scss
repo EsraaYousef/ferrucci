@@ -1608,6 +1608,32 @@
     .modal-open .modal.follow-order-modal .close i {
         font-size: 13px;
     }
+    .address-modal{
+        form{
+            margin-top: 20px;
+        }
+    }
+    .form-edit{
+         .form-group{
+             padding: 10px;
+         }
+         .form-control{
+            font-size: 13px;
+            &::placeholder{
+                font-size: 13px;
+            }
+        }
+    } 
+    .address-form {
+        .remove-address{
+            left: 0;
+        }
+    }
+    .edit-adress-block{
+        .form-group{
+            // display: block;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -1789,6 +1815,18 @@
             .discover-list {
                 bottom: 20px;
             }
+        }
+    }
+
+    
+    .edit-adress-block{
+        .form-group{
+            align-items: center;
+    flex-direction: row;
+    text-align: right;
+        }
+        .form-control{
+            width: 80%;
         }
     }
 }
