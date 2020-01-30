@@ -87,47 +87,89 @@
                                         <h3 class="main-title wow fadeInDown">انشاء حساب</h3>
                                     </div>
                                     <form action="">
-                                        <div class="form-group">
-                                            <div class="avatar-upload">
-                                                <div class="avatar-edit">
-                                                    <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                                    <label for="imageUpload"></label>
-                                                </div>
-                                                <div class="avatar-preview">
-                                                    <div id="imagePreview" style="background-image: url('img/dynamic/avatars/person.png');"></div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <div class="avatar-upload">
+                                                        <div class="avatar-edit">
+                                                            <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                                            <label for="imageUpload"></label>
+                                                        </div>
+                                                        <div class="avatar-preview">
+                                                            <div id="imagePreview" style="background-image: url('img/dynamic/avatars/person.png');"></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group w-icon">
-                                            <span class="inpt-icon"><i class="fas fa-user"></i></span>
-                                            <input type="text" class="form-control red-bg" placeholder="اسم المستخدم"
-                                                required />
-                                        </div>
-                                        <div class="form-group w-icon">
-                                            <span class="inpt-icon"><i class="fas fa-envelope"></i></span>
-                                            <input type="email" class="form-control red-bg"
-                                                placeholder="البريد الالكتروني" required />
-                                        </div>
-                                        <div class="form-group w-icon">
-                                            <span class="inpt-icon"><i class="fas fa-mobile-alt"></i></span>
-                                            <input type="tel" class="form-control red-bg" placeholder="رقم الجوال"
-                                                required />
-                                        </div>
-                                        <div class="form-group w-icon">
-                                            <span class="inpt-icon"><i class="fas fa-unlock"></i></span>
-                                            <input type="password" class="form-control red-bg" placeholder="كلمة المرور"
-                                                required />
-                                        </div>
-                                        <div class="form-group w-icon">
-                                            <span class="inpt-icon"><i class="fas fa-unlock"></i></span>
-                                            <input type="password" class="form-control red-bg"
-                                                placeholder="تأكيد كلمة المرور" required />
-                                        </div>
-                                        <div class="form-group login-text">
-                                            <p>
-                                                لدى حساب بالفعل
-                                                <a href="login.html" class="login-text-link">تسجيل دخول</a>
-                                            </p>
+                                            <div class="col-md-12">
+                                                <div class="form-group w-icon">
+                                                    <span class="inpt-icon"><i class="fas fa-user"></i></span>
+                                                    <input type="text" class="form-control red-bg" placeholder="اسم المستخدم"
+                                                        required />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group w-icon">
+                                                    <span class="inpt-icon"><i class="fas fa-envelope"></i></span>
+                                                    <input type="email" class="form-control red-bg"
+                                                        placeholder="البريد الالكتروني" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group w-icon">
+                                                    <span class="inpt-icon"><i class="fas fa-mobile-alt"></i></span>
+                                                    <input type="tel" class="form-control red-bg" placeholder="رقم الجوال"
+                                                        required />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group w-icon">
+                                                    <select class="form-control country" required="">
+                                                        <span class="inpt-icon"><i class="fas fa-flag"></i></span>
+                                                        <option value="" selected="">اختر الدوله</option>
+                                                        <option value="1"> السعودية</option>
+                                                        <option value="2">الامارات</option>
+                                                        <option value="3">مصر</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group w-icon">
+                                                    <select class="form-control city" required="">
+                                                        <span class="inpt-icon"><i class="fas fa-flag"></i></span>
+                                                        <option value="" selected="">اختر المدينة</option>
+                                                        <option value="1">مدينة 1</option>
+                                                        <option value="2">مدينة 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group w-icon">
+                                                    <input type="text" class="form-control red-bg" placeholder="الحى" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group w-icon">
+                                                    <span class="inpt-icon"><i class="fas fa-unlock"></i></span>
+                                                    <input type="password" class="form-control red-bg" placeholder="كلمة المرور"
+                                                        required />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group w-icon">
+                                                    <span class="inpt-icon"><i class="fas fa-unlock"></i></span>
+                                                    <input type="password" class="form-control red-bg"
+                                                        placeholder="تأكيد كلمة المرور" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group login-text">
+                                                    <p>
+                                                        لدى حساب بالفعل
+                                                        <a href="login.html" class="login-text-link">تسجيل دخول</a>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                         <button class="btn btn-main btn-lg" type="submit">
                                             تسجيل
