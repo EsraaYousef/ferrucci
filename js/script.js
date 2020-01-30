@@ -245,6 +245,15 @@ $(document).ready(function() {
       .fadeOut()
       // .remove();
   });
+  //remove shopped item
+  $(".remove-item").click(function() {
+    $(this)
+      .closest(".shopping-list")
+      .delay(500)
+        .queue(function() {
+            $(this).remove();
+      });
+  });
 
   //remove item cart
   $(".remove-item").click(function() {

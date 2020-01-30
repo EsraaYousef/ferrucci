@@ -101,18 +101,19 @@ textarea.form-control {
     font-size: 17px;
 
     &.btn-bordered{
-        border: 1.5px solid $main-color;
+        border: 1px solid $main-color;
     }
     &.btn-transparent{
         background-color: transparent;
     }
     &:hover,
     &:focus {
-        color: $white-color;
         outline: unset;
-        box-shadow: unset;
-        opacity: 0.9;
         @extend %ease;
+        background-color: #feeeee;
+        color: $main-color;
+        box-shadow: inset 0px 0px 27px 0px rgba(203, 41, 47, 0.4);
+        border: 1px solid rgba(203, 41, 47, 0.4);
     }
 
     &.btn-lg{
@@ -455,8 +456,6 @@ footer {
     }
 }
 
-
-
 .product-rate {
     position: relative;
     display: inline-block;
@@ -524,39 +523,65 @@ footer {
 .dropdown-menu {
     background-color: #feeeee;
     min-width: 100%;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.38);
     padding: 0;
     border-radius: 5px;
+    @extend %shadow;
+    @extend %ease;
+    display: block;
+    visibility: hidden;
+    top: calc(100% - 20px);
+    opacity: 0;
+
+    &.show{
+        @extend %ease;
+        display: block;
+        visibility: visible;
+        top: 100%;
+        opacity: 1;
+    }
 
     .dropdown-item {
-        padding: 5px;
+        padding: 0;
+
+        &:first-of-type{
+            a{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+        }
+        &:last-of-type{
+            a{
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        }
 
         a{
             position: relative;
             text-align: right;
             padding: 10px;
-            margin: 5px 0;
-            font-size: 16px;
+            font-size: 15px;
             color: #cb292f;
             font-family: "Cairo-SemiBold";
             background-color: transparent;
-            border-radius: 5px;
+            border-radius: 0px;
             display: block;
             @extend %ease;
 
             &:hover{
-                background-color: $main-color;
-                color: $white-color;
+                background-color: #feeeee;
+                color: $black-color;
                 @extend %ease;
             }
         }
         
         &:not(:last-of-type){
-            border-bottom: 1px solid #cb292f;
+            border-bottom: 1px solid #f5e9e9;
         }
         .arrow{
             position: absolute;
             left: 10px;
+            font-size: 13px;
         }
     }
 
@@ -564,12 +589,20 @@ footer {
         display: none;
     }
     .dropdown-item{
+        .submenu{
+            display: none;
+            visibility: hidden;
+            right: calc(100% - 160px);
+            opacity: 0;
+        }
         &:hover{
             .submenu{
                 display: block;
                 position: absolute;
                 right: 160px;
                 top: -2px;
+                visibility: visible;
+                opacity: 1;
             }
         }
     }

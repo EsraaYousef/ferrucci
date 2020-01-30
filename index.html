@@ -77,7 +77,7 @@
                         <a href="favourite.html" class="main-color"><img src="img/icons/heart.png" alt="heart"></a>
                     </li>
                     <li>
-                        <a href="cart.html" class="main-color"><img src="img/icons/cart.png" alt="shopping cart"></a>
+                        <a href="#" class="main-color"><img src="img/icons/cart.png" alt="shopping cart"></a>
                     </li>
                     <!-- if not logged in -->
                     <li>
@@ -410,8 +410,45 @@
                         <li>
                             <a href="favourite.html" class="main-color"><img src="img/icons/heart.png" alt="heart"></a>
                         </li>
-                        <li>
-                            <a href="cart.html" class="main-color"><img src="img/icons/cart.png" alt="shopping cart"></a>
+                        <li class="dropdown">
+                            <a href="" class="main-color dropdown-toggle no-caret" id="dropdownCartItems" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="img/icons/cart.png" alt="shopping cart">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownCartItems">
+                                <li class="dropdown-item shopping-list">
+                                    <a href="cart.html">
+                                        <div class="cart-item">
+                                            <img src="img/dynamic/products/01.png" alt="img">
+                                            <p class="item-name m-0">اسم المنتج</p>
+                                        </div>
+                                    </a>
+                                    <span class="remove-item">
+                                        <i class="fa fa-times-circle"></i>
+                                    </span>
+                                </li>
+                                <li class="dropdown-item shopping-list">
+                                    <a href="cart.html">
+                                        <div class="cart-item">
+                                            <img src="img/dynamic/products/01.png" alt="img">
+                                            <p class="item-name m-0">اسم المنتج</p>
+                                        </div>
+                                    </a>
+                                    <span class="remove-item">
+                                        <i class="fa fa-times-circle"></i>
+                                    </span>
+                                </li>
+                                <li class="dropdown-item shopping-list">
+                                    <a href="cart.html">
+                                        <div class="cart-item">
+                                            <img src="img/dynamic/products/01.png" alt="img">
+                                            <p class="item-name m-0">اسم المنتج</p>
+                                        </div>
+                                    </a>
+                                    <span class="remove-item">
+                                        <i class="fa fa-times-circle"></i>
+                                    </span>
+                                </li>
+                            </ul>
                         </li>
                         <!-- if not logged in -->
                         <li>
@@ -774,14 +811,6 @@
                                                 <span class="i-noliked"><i class="far fa-heart"></i></span>
                                                 <span class="i-liked"><i class="fas fa-heart"></i></span>
                                             </button>
-                                            <div class="product-rate">
-                                                <span class="white-color text">تقييم المنتج</span>
-                                                <span class="star gold"><i class="fas fa-star"></i></span>
-                                                <span class="star gold"><i class="fas fa-star"></i></span>
-                                                <span class="star gold"><i class="fas fa-star"></i></span>
-                                                <span class="star grey"><i class="far fa-star"></i></span>
-                                                <span class="star grey"><i class="far fa-star"></i></span>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -798,14 +827,6 @@
                                                         <span class="i-noliked"><i class="far fa-heart"></i></span>
                                                         <span class="i-liked"><i class="fas fa-heart"></i></span>
                                                     </button>
-                                                    <div class="product-rate">
-                                                        <span class="white-color text">تقييم المنتج</span>
-                                                        <span class="star gold"><i class="fas fa-star"></i></span>
-                                                        <span class="star gold"><i class="fas fa-star"></i></span>
-                                                        <span class="star gold"><i class="fas fa-star"></i></span>
-                                                        <span class="star grey"><i class="far fa-star"></i></span>
-                                                        <span class="star grey"><i class="far fa-star"></i></span>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -822,14 +843,6 @@
                                                         <span class="i-noliked"><i class="far fa-heart"></i></span>
                                                         <span class="i-liked"><i class="fas fa-heart"></i></span>
                                                     </button>
-                                                    <div class="product-rate">
-                                                        <span class="white-color text">تقييم المنتج</span>
-                                                        <span class="star gold"><i class="fas fa-star"></i></span>
-                                                        <span class="star gold"><i class="fas fa-star"></i></span>
-                                                        <span class="star gold"><i class="fas fa-star"></i></span>
-                                                        <span class="star grey"><i class="far fa-star"></i></span>
-                                                        <span class="star grey"><i class="far fa-star"></i></span>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -850,14 +863,6 @@
                                                 <span class="i-noliked"><i class="far fa-heart"></i></span>
                                                 <span class="i-liked"><i class="fas fa-heart"></i></span>
                                             </button>
-                                            <div class="product-rate">
-                                                <span class="white-color text">تقييم المنتج</span>
-                                                <span class="star gold"><i class="fas fa-star"></i></span>
-                                                <span class="star gold"><i class="fas fa-star"></i></span>
-                                                <span class="star gold"><i class="fas fa-star"></i></span>
-                                                <span class="star grey"><i class="far fa-star"></i></span>
-                                                <span class="star grey"><i class="far fa-star"></i></span>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1064,8 +1069,10 @@
                     </div>
                 </div>
                 <div class="copy-right center">
-                    <p class="center"> Designed By <a href="#" target="_blank"> Jaadara</a> 2019 .Ferrucci .Al L Rights
-                        Reserved </p>
+                    <p>AlL Rights Reserved Ferrucci 2019 .</p>
+                    <p class="center"> Designed And Developed By 
+                        <a href="#" target="_blank"><img src="img/jaadara.png" alt="jaadara" title="jaadara"></a>
+                    </p>
                 </div>
             </div>
         </footer>

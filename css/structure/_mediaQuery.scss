@@ -263,8 +263,8 @@
         .navbar-collapse {
             position: fixed;
             height: 100%;
-            width: 84%;
-            left: -90%;
+            width: 400px;
+            left: -450px;
             top: 0;
             -webkit-transition: all ease-in-out 0.4s;
             transition: all ease-in-out 0.4s;
@@ -282,7 +282,6 @@
             &.show {
                 display: block !important;
                 left: 0 !important;
-                right: unset !important;
                 -webkit-transition: all ease-in-out 0.4s;
                 transition: all ease-in-out 0.4s;
             }
@@ -497,6 +496,8 @@
 
             .item-overlay {
                 padding: 0;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
@@ -692,6 +693,17 @@
         }
     }
 
+    .navbar {
+        .navbar-collapse {
+            width: 300px;
+            left: -350px;
+
+            &.show {
+                left: 0;
+            }
+        }
+    }
+    
     // .newest-block {
     //     .data-filters {
     //         ul {

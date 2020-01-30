@@ -1,4 +1,4 @@
-body::-webkit-scrollbar-track, .custom-control-label:before, .scrollToTop, .scrollToTop:hover, .scrollToTop:focus, .navbar, .navbar .close-menu, .navbar-collapse.second-collapse::-webkit-scrollbar-track, .brands-content .single-brand:hover, .profile-content .user-links .single-link .icon, .content-list .single-item .icon, .content-list .single-payment a:hover .arrow-left, .content-list .single-payment .icon, .content-list.coupons li .icon, .favourite-list .remove-item, .product-show-img, .modal-content {
+body::-webkit-scrollbar-track, .custom-control-label:before, .dropdown-menu, .scrollToTop, .scrollToTop:hover, .scrollToTop:focus, .navbar, .navbar .close-menu, .navbar-collapse.second-collapse::-webkit-scrollbar-track, .brands-content .single-brand:hover, .profile-content .user-links .single-link .icon, .content-list .single-item .icon, .content-list .single-payment a:hover .arrow-left, .content-list .single-payment .icon, .content-list.coupons li .icon, .favourite-list .remove-item, .product-show-img, .modal-content {
   -webkit-box-shadow: 0px 0px 10px rgba(203, 41, 47, 0.4);
   box-shadow: 0px 0px 10px rgba(203, 41, 47, 0.4); }
 
@@ -10,7 +10,7 @@ body::-webkit-scrollbar-track, .custom-control-label:before, .scrollToTop, .scro
   -webkit-box-shadow: 0px 0px 18px rgba(203, 41, 47, 0.75);
   box-shadow: 0px 0px 18px rgba(203, 41, 47, 0.75); }
 
-.btn, .btn:hover, .btn:focus, .more-link span, .more-link .fas, .more-link:hover span, .card.product-item, .card.product-item .card-image img, .card.product-item:hover, .card.product-item:hover .card-image img, .dropdown-menu .dropdown-item a, .dropdown-menu .dropdown-item a:hover, .navbar .navbar-brand img, .navbar .navbar-nav .nav-item .nav-link, .navbar .navbar-nav.left-links li a, .navbar .navbar-nav.left-links li a:hover, .navbar .menu-wrapper, .second-slider .item.slick-slide img, .second-slider .item.slick-slide:hover img, .data-filters ul.data-filters-links li, .data-filters ul.data-filters-links li.active, .common-block .all-groups .single-group .form-inline, footer .footer-link a, footer .footer-link a:hover, footer .center-list .footer-link, footer .footer-social li a, footer .footer-social li a:hover, footer .footer-social li a:hover span, .single-way .icon, .brands-content .single-brand, .brands-content .single-brand .brand-img img, .brands-content .single-brand:hover, .profile-content .user-links .single-link .icon, .profile-content .user-links .single-link .icon img, .profile-content .user-links .single-link p, .profile-content .user-links .single-link:hover .icon img, .profile-content .user-links .single-link:hover p, .address-form .form-control, .address-form .remove-address, .address-form .form-group, .address-form .form-group:hover, .address-form .form-group:hover .form-control, .address-form .form-group:hover .form-control::placeholder, .address-form .form-group:hover .remove-address, .content-list .single-payment a .arrow-left, .content-list .single-payment a:hover .arrow-left, .content-list .payment-header .arrow-left, .favourite-list .remove-item, .product-info .main-info .left-grid .btn, .product-info .main-info .left-grid .btn .fav-icon, .product-info .main-info .left-grid .btn.liked, .product-info .main-info .left-grid .btn.liked .fav-icon, .product-info .main-info .left-grid .share-list li a, .product-info .main-info .left-grid .share-list li a:hover, .product-info .counter-div .counter span, .product-info .counter-div .counter span:hover, .cutom-tabs .nav-tabs .nav-item .nav-link, .cutom-tabs .nav-tabs .nav-item .nav-link:hover, .cutom-tabs .nav-tabs .nav-item .nav-link:focus, .cutom-tabs .nav-tabs .nav-item .nav-link.active, .cart-items .counter-div .counter span, .cart-items .counter-div .counter span:hover, .cart-items .btn-left i, .cart-items .btn-left:hover i, .tabs .nav-tabs .nav-link, .tabs .nav-tabs .nav-link.active {
+.btn, .btn:hover, .btn:focus, .more-link span, .more-link .fas, .more-link:hover span, .card.product-item, .card.product-item .card-image img, .card.product-item:hover, .card.product-item:hover .card-image img, .dropdown-menu, .dropdown-menu.show, .dropdown-menu .dropdown-item a, .dropdown-menu .dropdown-item a:hover, .navbar .navbar-brand img, .navbar .navbar-nav .nav-item .nav-link, .navbar .navbar-nav.left-links li a, .navbar .navbar-nav.left-links li a:hover, .navbar .menu-wrapper, .first-slider .item .item-overlay .content .btn, .second-slider .item.slick-slide img, .second-slider .item.slick-slide:hover img, .data-filters ul.data-filters-links li, .data-filters ul.data-filters-links li.active, .common-block .all-groups .single-group .form-inline, footer .footer-link a, footer .footer-link a:hover, footer .center-list .footer-link, footer .footer-social li a, footer .footer-social li a:hover, footer .footer-social li a:hover span, .single-way .icon, .brands-content .single-brand, .brands-content .single-brand .brand-img img, .brands-content .single-brand:hover, .profile-content .user-links .single-link .icon, .profile-content .user-links .single-link .icon img, .profile-content .user-links .single-link p, .profile-content .user-links .single-link:hover .icon img, .profile-content .user-links .single-link:hover p, .address-form .form-control, .address-form .remove-address, .address-form .form-group, .address-form .form-group:hover, .address-form .form-group:hover .form-control, .address-form .form-group:hover .form-control::placeholder, .address-form .form-group:hover .remove-address, .content-list .single-payment a .arrow-left, .content-list .single-payment a:hover .arrow-left, .content-list .payment-header .arrow-left, .favourite-list .remove-item, .product-info .main-info .left-grid .btn, .product-info .main-info .left-grid .btn .fav-icon, .product-info .main-info .left-grid .btn.liked, .product-info .main-info .left-grid .btn.liked .fav-icon, .product-info .main-info .left-grid .share-list li a, .product-info .main-info .left-grid .share-list li a:hover, .product-info .counter-div .counter span, .product-info .counter-div .counter span:hover, .cutom-tabs .nav-tabs .nav-item .nav-link, .cutom-tabs .nav-tabs .nav-item .nav-link:hover, .cutom-tabs .nav-tabs .nav-item .nav-link:focus, .cutom-tabs .nav-tabs .nav-item .nav-link.active, .cart-items .counter-div .counter span, .cart-items .counter-div .counter span:hover, .cart-items .btn-left i, .cart-items .btn-left:hover i, .tabs .nav-tabs .nav-link, .tabs .nav-tabs .nav-link.active {
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -175,14 +175,15 @@ textarea.form-control {
   box-shadow: 0px 5px 13.5px 1.5px rgba(0, 0, 0, 0.05);
   font-size: 17px; }
   .btn.btn-bordered {
-    border: 1.5px solid #cb292f; }
+    border: 1px solid #cb292f; }
   .btn.btn-transparent {
     background-color: transparent; }
   .btn:hover, .btn:focus {
-    color: #ffffff;
     outline: unset;
-    box-shadow: unset;
-    opacity: 0.9; }
+    background-color: #feeeee;
+    color: #cb292f;
+    box-shadow: inset 0px 0px 27px 0px rgba(203, 41, 47, 0.4);
+    border: 1px solid rgba(203, 41, 47, 0.4); }
   .btn.btn-lg {
     width: 200px; }
 
@@ -462,37 +463,58 @@ footer {
 .dropdown-menu {
   background-color: #feeeee;
   min-width: 100%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.38);
   padding: 0;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: block;
+  visibility: hidden;
+  top: calc(100% - 20px);
+  opacity: 0; }
+  .dropdown-menu.show {
+    display: block;
+    visibility: visible;
+    top: 100%;
+    opacity: 1; }
   .dropdown-menu .dropdown-item {
-    padding: 5px; }
+    padding: 0; }
+    .dropdown-menu .dropdown-item:first-of-type a {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+    .dropdown-menu .dropdown-item:last-of-type a {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px; }
     .dropdown-menu .dropdown-item a {
       position: relative;
       text-align: right;
       padding: 10px;
-      margin: 5px 0;
-      font-size: 16px;
+      font-size: 15px;
       color: #cb292f;
       font-family: "Cairo-SemiBold";
       background-color: transparent;
-      border-radius: 5px;
+      border-radius: 0px;
       display: block; }
       .dropdown-menu .dropdown-item a:hover {
-        background-color: #cb292f;
-        color: #ffffff; }
+        background-color: #feeeee;
+        color: #000000; }
     .dropdown-menu .dropdown-item:not(:last-of-type) {
-      border-bottom: 1px solid #cb292f; }
+      border-bottom: 1px solid #f5e9e9; }
     .dropdown-menu .dropdown-item .arrow {
       position: absolute;
-      left: 10px; }
+      left: 10px;
+      font-size: 13px; }
   .dropdown-menu .submenu {
     display: none; }
+  .dropdown-menu .dropdown-item .submenu {
+    display: none;
+    visibility: hidden;
+    right: calc(100% - 160px);
+    opacity: 0; }
   .dropdown-menu .dropdown-item:hover .submenu {
     display: block;
     position: absolute;
     right: 160px;
-    top: -2px; }
+    top: -2px;
+    visibility: visible;
+    opacity: 1; }
 
 .dropdown-item.active, .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus {
   color: #ffffff;
@@ -683,6 +705,8 @@ footer {
       width: 22px;
       height: auto;
       max-height: 22px; }
+    .navbar .navbar-nav.left-links .dropdown-menu {
+      top: calc(100% + 15px); }
   .navbar .menu-wrapper {
     height: 31px;
     cursor: pointer;
@@ -958,7 +982,13 @@ body {
       min-width: 200px;
       box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.75);
       padding: 0;
-      font-size: 20px; }
+      font-size: 20px;
+      border: 1px solid transparent; }
+      .first-slider .item .item-overlay .content .btn:hover, .first-slider .item .item-overlay .content .btn:focus {
+        background-color: #feeeee;
+        color: #cb292f;
+        box-shadow: inset 0px 0px 27px 0px rgba(203, 41, 47, 0.4);
+        border: 1px solid rgba(203, 41, 47, 0.4); }
 
 .second-block {
   padding-top: 30px; }
@@ -1079,6 +1109,7 @@ body {
         .common-block .all-groups .single-group .form-inline .product-action {
           width: 100%; }
           .common-block .all-groups .single-group .form-inline .product-action .btn {
+            min-width: 170px;
             height: 42px;
             line-height: 42px;
             margin: 0 5px;
@@ -1101,18 +1132,6 @@ body {
             display: inline-block; }
           .common-block .all-groups .single-group .form-inline .product-action .fav-link.liked .i-noliked {
             display: none; }
-          .common-block .all-groups .single-group .form-inline .product-action .product-rate {
-            margin-top: 20px; }
-            .common-block .all-groups .single-group .form-inline .product-action .product-rate .text {
-              color: #ffffff;
-              margin-left: 10px;
-              display: inline-block;
-              text-shadow: 0 5px 7px rgba(203, 41, 47, 0.36); }
-            .common-block .all-groups .single-group .form-inline .product-action .product-rate .star {
-              position: relative;
-              z-index: 1; }
-              .common-block .all-groups .single-group .form-inline .product-action .product-rate .star:not(:last-of-type) {
-                margin-left: 5px; }
       .common-block .all-groups .single-group:hover:after, .common-block .all-groups .single-group:hover:before {
         height: 100%;
         opacity: 0.4;
@@ -1282,13 +1301,17 @@ footer {
 .copy-right {
   border-top: 1px solid rgba(250, 240, 240, 0.2);
   padding-top: 25px;
-  margin-top: 25px; }
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
   .copy-right p {
     margin: 0;
     color: #ffffff;
     text-align: center;
     font-size: 13px;
-    font-family: "Cairo-Regular"; }
+    font-family: "Cairo-Regular";
+    direction: ltr; }
     .copy-right p a {
       color: #ffffff; }
 
@@ -1331,6 +1354,33 @@ footer {
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   border-color: transparent transparent #cb292f;
   border-width: 0 6px 8px 6px; }
+
+.shopping-list {
+  position: relative; }
+  .shopping-list .cart-item {
+    display: flex;
+    align-items: center; }
+    .shopping-list .cart-item img {
+      width: 25px;
+      max-height: 25px;
+      margin-left: 5px; }
+    .shopping-list .cart-item .item-name {
+      font-size: 14px; }
+  .shopping-list .remove-item {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    z-index: 3;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: #cb292f;
+    border-radius: 50%;
+    cursor: pointer; }
 
 .all-form {
   border-radius: 17px;
@@ -2967,8 +3017,8 @@ form.md-width {
     .navbar .navbar-collapse {
       position: fixed;
       height: 100%;
-      width: 84%;
-      left: -90%;
+      width: 400px;
+      left: -450px;
       top: 0;
       -webkit-transition: all ease-in-out 0.4s;
       transition: all ease-in-out 0.4s;
@@ -2985,7 +3035,6 @@ form.md-width {
       .navbar .navbar-collapse.show {
         display: block !important;
         left: 0 !important;
-        right: unset !important;
         -webkit-transition: all ease-in-out 0.4s;
         transition: all ease-in-out 0.4s; }
       .navbar .navbar-collapse .btn {
@@ -3097,7 +3146,9 @@ form.md-width {
   .first-slider .owl-item .item {
     height: 250px; }
     .first-slider .owl-item .item .item-overlay {
-      padding: 0; }
+      padding: 0;
+      justify-content: center;
+      align-items: center; }
 
   .navbar-collapse.second-collapse .navbar-nav:not(:last-of-type) {
     margin-bottom: 20px;
@@ -3209,6 +3260,12 @@ form.md-width {
       width: 90px;
       height: 36px;
       line-height: 32px; }
+
+  .navbar .navbar-collapse {
+    width: 300px;
+    left: -350px; }
+    .navbar .navbar-collapse.show {
+      left: 0; }
 
   .card.product-item {
     margin-bottom: 20px; }
