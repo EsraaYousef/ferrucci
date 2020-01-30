@@ -812,3 +812,17 @@ footer {
 .slick-dotted.slick-slider {
     margin-bottom: 25px;
 }
+
+
+// validation
+.form-control.is-invalid, .was-validated .form-control:invalid,
+.form-control.is-valid, .was-validated .form-control:valid {
+    padding-left: calc(1.5em + .75rem);
+    padding-right: 40px;
+    background-position: center left calc(.375em + .1875rem);
+}
+.invalid-feedback {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #333;
+}

@@ -85,13 +85,16 @@
                                     <div class="title center">
                                         <h3 class="main-title wow fadeInDown">تسجيل دخول</h3>
                                     </div>
-                                    <form action="">
+                                    <form action="" class="needs-validation" novalidate>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group w-icon">
                                                     <span class="inpt-icon"><i class="fas fa-user"></i></span>
                                                     <input type="text" class="form-control red-bg" placeholder="اسم المستخدم"
                                                         required />
+                                                        <div class="invalid-feedback">
+                                                            من فضلك أدخل الاسم الصحيح
+                                                       </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
@@ -99,6 +102,9 @@
                                                     <span class="inpt-icon"><i class="fas fa-envelope"></i></span>
                                                     <input type="email" class="form-control red-bg"
                                                         placeholder="البريد الالكتروني" required />
+                                                        <div class="invalid-feedback">
+                                                            من فضلك أدخل البريد الالكتروني بطريقة صحيحة
+                                                       </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
@@ -106,6 +112,9 @@
                                                     <span class="inpt-icon"><i class="fas fa-unlock"></i></span>
                                                     <input type="password" class="form-control red-bg" placeholder="كلمة المرور"
                                                         required />
+                                                        <div class="invalid-feedback">
+                                                            من فضلك أدخل كلمة المرور الصحيحة
+                                                       </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
@@ -137,6 +146,13 @@
         <i class="fas fa-chevron-up icon"></i>
     </button>
 
+    <style>
+        label.error {
+            color: #ff413e;
+            padding:1px 20px 1px 20px;
+        }
+    </style>
+
     <!-- JavaScript Libraries -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -147,6 +163,7 @@
     <script src="js/slick/slick.js"></script>
     <script src="js/select2.min.js"></script>
     <script src="js/jquery.matchHeight-min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
     <!-- display only if map -->
     <!-- <script src="js/map.js"></script>

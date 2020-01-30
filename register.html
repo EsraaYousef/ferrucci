@@ -86,7 +86,7 @@
                                     <div class="title center">
                                         <h3 class="main-title wow fadeInDown">انشاء حساب</h3>
                                     </div>
-                                    <form action="">
+                                    <form action="" class="needs-validation" novalidate>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
@@ -106,6 +106,9 @@
                                                     <span class="inpt-icon"><i class="fas fa-user"></i></span>
                                                     <input type="text" class="form-control red-bg" placeholder="اسم المستخدم"
                                                         required />
+                                                        <div class="invalid-feedback">
+                                                            من فضلك أدخل الاسم الصحيح
+                                                       </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
@@ -113,6 +116,9 @@
                                                     <span class="inpt-icon"><i class="fas fa-envelope"></i></span>
                                                     <input type="email" class="form-control red-bg"
                                                         placeholder="البريد الالكتروني" required />
+                                                        <div class="invalid-feedback">
+                                                            من فضلك أدخل البريد الالكتروني بطريقة صحيحة
+                                                       </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
@@ -120,6 +126,9 @@
                                                     <span class="inpt-icon"><i class="fas fa-mobile-alt"></i></span>
                                                     <input type="tel" class="form-control red-bg" placeholder="رقم الجوال"
                                                         required />
+                                                        <div class="invalid-feedback">
+                                                            الرجاء ادخال رقم جوال صحيح
+                                                       </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -145,7 +154,9 @@
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group w-icon">
-                                                    <input type="text" class="form-control red-bg" placeholder="الحى" required />
+                                                    <input type="text" class="form-control red-bg" placeholder="الحى" required /><div class="invalid-feedback">
+                                                        الرجاء ادخال الحى
+                                                   </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
@@ -153,13 +164,18 @@
                                                     <span class="inpt-icon"><i class="fas fa-unlock"></i></span>
                                                     <input type="password" class="form-control red-bg" placeholder="كلمة المرور"
                                                         required />
+                                                        <div class="invalid-feedback">
+                                                            الرجاء ادخال كلمة مرور صالحة
+                                                       </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group w-icon">
                                                     <span class="inpt-icon"><i class="fas fa-unlock"></i></span>
                                                     <input type="password" class="form-control red-bg"
-                                                        placeholder="تأكيد كلمة المرور" required />
+                                                        placeholder="تأكيد كلمة المرور" required /><div class="invalid-feedback">
+                                                            الرجاء ادخال كلمة مرور مطابقة
+                                                       </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
