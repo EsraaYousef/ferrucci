@@ -248,7 +248,7 @@ $(document).ready(function() {
   //remove shopped item
   $(".remove-item").click(function() {
     $(this)
-      .closest(".shopping-list")
+      .closest(".dropdown-item")
       .delay(500)
         .queue(function() {
             $(this).remove();
