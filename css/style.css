@@ -1252,9 +1252,6 @@ footer {
     font-size: 16px;
     font-family: "Cairo-Regular"; }
   footer .subscribe .form-group {
-    background: #ffffff;
-    border-radius: 30px;
-    border: 0.86px solid #cb292f;
     overflow: hidden; }
     footer .subscribe .form-group .form-control {
       border: 0;
@@ -1262,7 +1259,11 @@ footer {
       overflow: hidden;
       font-size: 14px;
       background: transparent;
-      padding: 10px 10px 10px 140px; }
+      padding: 10px 10px 10px 140px;
+      height: 50px;
+      background: #ffffff;
+      border-radius: 30px;
+      border: 0.86px solid #cb292f; }
       footer .subscribe .form-group .form-control:focus {
         box-shadow: unset; }
       footer .subscribe .form-group .form-control:-webkit-input-placeholder {
@@ -1273,14 +1274,17 @@ footer {
         color: #b1b1b1; }
       footer .subscribe .form-group .form-control :-moz-placeholder {
         color: #b1b1b1; }
+    footer .subscribe .form-group .invalid-feedback {
+      color: #cb292f; }
   footer .subscribe .btn {
     width: 130px;
     font-size: 16px;
-    border-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     position: absolute;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 50px;
     border: 0; }
   footer .footer-social li a {
     position: relative;
