@@ -262,6 +262,15 @@ $(document).ready(function() {
       .fadeOut()
       // .remove();
   });
+
+  //remove favourite item
+  $("#video-modal .close").click(function() {
+    $(this)
+      .closest("#video-modal")
+      .fadeOut()
+      $('body').removeClass('.modal-open');
+      $('.youtube-iframe').addClass('paused'); 
+  });
 });
 
 // loading window

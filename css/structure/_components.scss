@@ -3513,3 +3513,19 @@ form{
         transform: rotateY(360deg);
     }
 }
+
+#video-modal{
+    display: block;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.5);
+
+    .modal-content{
+        padding-top: 40px;
+    }
+
+    .youtube-iframe{
+        &.paused{
+            display: none;
+        }
+    }
+}
